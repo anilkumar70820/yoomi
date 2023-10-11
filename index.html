@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====Favicon===== -->
+    <link rel="icon" type="img" href="/assets/images/svg/Group 23.svg">
+    <title>Yoomi</title>
+    <!-- ============stylesheet============ -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- =========Aos========= -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ============Bootstrap======= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ========slick slider links======== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="overflow-hidden">
+    <div class="overflow-hidden">
+        <!-- ======Preloader====== -->
+        <div id="preloader"
+            class="min-vh-100 preloader_animation d-flex align-items-center justify-content-center bg-076787 position-fixed w-100 top-0 z-99 start-0">
+            <div><span><img src="assets/images/svg/footer_logo.svg" alt=""></span>
+            </div>
+        </div>
+        <!-- ======Preloader end====== -->
+        <!-- ==========Back to top======= -->
+        <button onclick="topFunction()" id="back-top" class="back_top_btn" title="Go to top"><svg width="20" height="20"
+                fill="white" viewBox="0 0 16 16">
+                <path fillRule="evenodd"
+                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z">
+                </path>
+                <path fillRule="evenodd"
+                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z">
+                </path>
+            </svg></button>
+        <!-- ==========Back to top end======= -->
+        <!-- ============Hero Section With Nav============ -->
+        <section class=" bg_F8FDFF position-relative z-3">
+            <img class="hero_rectangle1_abs z-n1 d-md-block d-none" src="assets/images/png/hero_left_rectangle.png"
+                alt="bg-pic" />
+            <img class="hero_rectangle2_abs z-n1 d-md-block d-none" src="assets/images/png/hero_right_rectangle.png"
+                alt="bg-pic" />
+            <img class="hero_left_plant_abs d-md-block d-none" src="assets/images/png/hero_left_plant.png"
+                alt="bg-pic" />
+            <img class="hero_right_plant_abs d-md-block d-none" src="assets/images/png/hero_right_plant.png"
+                alt="bg-pic" />
+            <header class="mb-md-5 bg_F8FDFF position-fixed w-100 top-0 z-98">
+                <nav class="d-flex justify-content-between py-4 align-items-center my_container">
+                    <a class="ff-Montserrat fw-bolder fs-lg text-ffffff" href="#"><img
+                            src="/assets/images/svg/Group 23.svg" alt="logo">
+                    </a>
+                    <ul class="d-flex align-items-center justify-content-center flex-lg-row flex-column gap-5 mb-0 sm-navbar p-0"
+                        id="nav">
+                        <li><a onclick="navresponsive()" class="ff-inter fw-medium fs-sm text-000000"
+                                href="#About">About
+                                Us</a>
+                        </li>
+                        <li><a onclick="navresponsive()" class="ff-inter fw-medium fs-sm text-000000"
+                                href="#News">News</a>
+                        </li>
+                        <li><a onclick="navresponsive()" class="ff-inter fw-medium fs-sm text-000000"
+                                href="#Contact">Contact Us</a>
+                        </li>
+                        <li><button onclick="navresponsive()" class="ff-inter fw-medium fs-xsm text-ffffff buttons">Get
+                                Started</button>
+                        </li>
+                    </ul>
+                    <label for="menuicon" onclick="navresponsive()" class="d-lg-none" id="change">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </label>
+                </nav>
+            </header>
+            <div class="pt-5 pb-md-4 mb-2">
+                <div class="my_container mt-5 pt-5 mb-md-5 pb-5">
+                    <h1 class="ff_Plus_Jakarta_Sans fs-2xl fw-normal text-000000 text-center mb-2 mt-lg-5"><span
+                            class="fw_800">Next
+                            Generation </span>Patient <span class="d-lg-block">Engagement and RTM
+                            Solution <span class="fw-semibold">✨</span></span></h1>
+                    <p class="ff-inter text-center text-000000 opacity-75 fw-normal fs-xmd text-capitalize">Industry
+                        leading
+                        AI motion-tracking technology</p>
+                    <div class="d-flex justify-content-center mt-5 pt-2 flex-sm-row flex-column align-items-center">
+                        <div class="input_box d-flex align-items-center width_sm_100 justify-content-between">
+                            <div><input class="ps-2 ff-inter fs-xsm fw-medium text-000000 input_box2" type="email"
+                                    placeholder="Enter Your Email" /></div>
+                            <div class="d-sm-block d-none"><button
+                                    class="buttons ff-inter fw-semibold fs-xsm text-ffffff d-inline-block m-1">Get
+                                    Started</button></div>
+                        </div>
+                        <div class="d-sm-none d-block mt-3 mt-sm-0"><button
+                                class="buttons ff-inter fw-semibold fs-xsm text-ffffff d-inline-block m-1">Get
+                                Started</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_line"></div>
+        </section>
+        <!-- ============Hero Section With Nav End============ -->
+        <!-- ===========Desktop View======== -->
+        <section class=" pt-4 desktop-bg">
+            <div class="my_container d-flex justify-content-center mt-2">
+                <img data-aos="zoom-in" data-aos-duration="1500" class="mx-5 w-100 cursor_pointer"
+                    src="assets/images/png/Desktop_pic2.png" alt="Desktop_pic">
+            </div>
+        </section>
+        <!-- ===========Desktop View End======== -->
+        <!-- ==========Our Features========== -->
+        <section class="py-lg-5 pt-5 position-relative z-1" id="News">
+            <img class="feature_rectangle_abs z-n1 d-md-block d-none"
+                src="assets/images/png/feature_tracking_rectangle.png" alt="pic" />
+            <div class="my_container feature_box    ">
+                <h3 data-aos="fade-down" data-aos-duration="1500"
+                    class="ff-inter fs-xsm fw-medium text-076787 text-uppercase text-center mb-2">Features</h3>
+                <h2 data-aos="fade-right" data-aos-duration="1500" class="headings text-center mb-2">Explore Our <span
+                        class="fw-semibold">Amazing Features</span></h2>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
+                    class="ff-inter fs-xsm fw-normal text-000000 opacity-75 text-center mb-5 pb-2">Yoomi is more than
+                    just a
+                    regular
+                    remote monitoring solution. Our product supports patients and <span class="d-lg-block">providers
+                        through
+                        every step of the rehabilitation process</span></p>
+                <div class="row align-items-center position-relative overflow-hidden">
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0 position-static z-3">
+                        <h3 data-aos="fade-right" data-aos-duration="1500"
+                            class="ff-inter text-076787 fw-medium fs-xsm text-uppercase">Library</h3>
+                        <h2 data-aos="fade-right" data-aos-duration="1500"
+                            class="ff_Plus_Jakarta_Sans fs-xlg text-000000 fw-normal mb-3 pb-1">Extensive Exercise <span
+                                class="fw-semibold">Library</span></h2>
+                        <div data-aos="fade-right" data-aos-duration="1500" class="d-flex align-items-center mb-2">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Utilize Yoomi’s HEP
+                                templates
+                                to quickly create and assign programs to your patients </p>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400"
+                            class="d-flex align-items-center mb-2">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Choose from our library of
+                                exercises for all patient cases</p>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600"
+                            class="d-flex align-items-center mb-4 pb-3">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Use Yoomi’s
+                                industry-leading
+                                exercise generation tool <span class="d-lg-block"> to create your own exercises that
+                                    track
+                                    adherence</span> and form in
+                                seconds</p>
+                        </div>
+                        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800"><button
+                                class="test_library_btn ff-inter fs-xsm text-ffffff fw-semibold">View the
+                                Library</button></div>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-lg-4">
+                        <img class="feature_bg_abs d-lg-block d-none" src="assets/images/png/Rectangle 3463862.png"
+                            alt="blue_rectangle">
+                        <div class="our_feature feature_slider">
+                            <div class="px-3">
+                                <img data-aos="zoom-in" data-aos-duration="1500" class="w-100 cursor_pointer"
+                                    src="assets/images/png/library_img1.png" alt="library_img1">
+                            </div>
+                            <div class="px-3">
+                                <img data-aos="zoom-in" data-aos-duration="1500" class="w-100 cursor_pointer"
+                                    src="assets/images/png/library_img2.png" alt="library_img2">
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 ms-3 gap-2">
+                            <div data-aos="zoom-in" data-aos-duration="1500"
+                                class="arrow_circle d-flex justify-content-center align-items-center f_pre">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.44789 1.03831L1.0625 5.42369L5.44789 9.80908" stroke="black"
+                                        stroke-width="1.75416" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="1500"
+                                class="arrow_circle d-flex justify-content-center align-items-center f_next">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.55016 1.03831L5.93555 5.42369L1.55016 9.80908" stroke="black"
+                                        stroke-width="1.75416" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========Our Features End========== -->
+        <!-- ==========Tracking Feedback============ -->
+        <section class="py-lg-5 pt-5 position-relative z-2">
+            <div class="my_container tracking_box">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img data-aos="zoom-in" data-aos-duration="1500" class="w-100 cursor_pointer"
+                            src="assets/images/png/tracking_feedback.png" alt="tracking_feedback">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 data-aos="fade-left" data-aos-duration="1500"
+                            class="ff-inter fs-xsm fw-medium text-076787 mb-2">TRACKING</h3>
+                        <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"
+                            class="ff_Plus_Jakarta_Sans fs-xlg text-000000 fw-normal mb-3 pb-1">Cutting Edge Motion
+                            <span class="fw-semibold">Tracking/ <span class="d-md-block">Feedback</span></span>
+                        </h2>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400"
+                            class="d-flex align-items-center mb-2">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Provides a holistic,
+                                real-time
+                                analysis of patient <span class="d-lg-block"> exercise form, capturing 300+ data points
+                                    and</span> critical metrics.</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600"
+                            class="d-flex align-items-center mb-2">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Delivers immediate feedback
+                                and
+                                guidance to correct and improve exercise form</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800"
+                            class="d-flex align-items-center mb-2">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Supported by the most
+                                accurate
+                                motion-tracking model designed for rehabilitation, Yoomi Vision</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000"
+                            class="d-flex align-items-center mb-4 pb-3">
+                            <img class="me-3" src="assets/images/svg/check-box.svg" alt="check-box">
+                            <p class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-0">Requires no custom
+                                hardware,
+                                sensors, or equipment</p>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1200"><button
+                                class="ff-inter fs-xsm text-ffffff fw-semibold test_library_btn">Test it
+                                Yourself</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========Tracking Feedback End============ -->
+        <!-- ===========Report Analytics============ -->
+        <section class="py-lg-5 pt-5 position-relative z-1">
+            <img class="report_tracking_abs z-n1 d-md-block d-none"
+                src="assets/images/png/report_tracking_rectangle.png" alt="pic" />
+            <div class="my_container report_box position-relative">
+                <img class="report_rectangle_abs d-md-block d-none" src="assets/images/png/report_rectangle.png"
+                    alt="pic" />
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h3 data-aos="fade-right" data-aos-duration="1500"
+                            class="fs-xsm ff-inter fw-medium text-076787 text-uppercase mb-2">report</h3>
+                        <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300"
+                            class="ff_Plus_Jakarta_Sans fs-xlg fw-normal text-000000 mb-3 pb-1">Reporting + <span
+                                class="fw-semibold">Analytics</span></h2>
+                        <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
+                            class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-4 pb-3">Track patient progress
+                            over
+                            time with
+                            compliance, <span class="d-md-block">pain, RPE, ROM and
+                                other key metrics</span></p>
+                        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700"><button
+                                class="buttons_2 ff-inter fs-xsm fw-semibold text-ffffff">View the Matrics</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img data-aos="zoom-in" data-aos-duration="1500" class="w-100 cursor_pointer"
+                            src="assets/images/png/report_img.png" alt="report_chart">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===========Report Analytics End============ -->
+        <!-- =========Remote Monitoring========== -->
+        <section class="py-5 mb-lg-5 position-relative z-1">
+            <img class="remote_rectangle_abs d-md-block d-none z-n1" src="assets/images/png/remote_rectangle.png"
+                alt="pic" />
+            <div class="my_container my-lg-4 py-lg-3 monitoring_box mb-lg-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <img data-aos="zoom-in" data-aos-duration="1500" class="w-100 cursor_pointer"
+                            src="assets/images/png/tracking.png" alt="tracking">
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <div>
+                            <h3 data-aos="fade-left" data-aos-duration="1500"
+                                class="ff-inter fs-xsm fw-medium text-076787 mb-2">TRACKING</h3>
+                            <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400"
+                                class="ff_Plus_Jakarta_Sans fs-xlg fw-normal text-000000 mb-3">Remote Therapeutic <span
+                                    class="d-block fw-semibold">Monitoring +
+                                    Billing</span></h2>
+                            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600"
+                                class="ff-inter fs-xsm fw-normal text-000000 opacity-75 mb-4 pb-2">Enhance patient care
+                                with
+                                remote monitoring, and enable <span class="d-lg-block"> providers to
+                                    generate over $160 per patient per month in</span> additional revenue</p>
+                            <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800"><button
+                                    class="buttons_2 ff-inter fs-xsm fw-semibold text-ffffff">Check Out the
+                                    Demo</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =========Remote Monitoring End========== -->
+        <!-- ==============Platform======== -->
+        <section class="py-lg-5 pt-5 mt-lg-5 bg-rgba position-relative" id="Contact">
+            <img class="platform_rec_abs d-md-block d-none" src="assets/images/png/platform_rectangle.png" alt="pic">
+            <div class="my_container py-4 my-lg-2">
+                <h3 data-aos="fade-down" data-aos-duration="1500"
+                    class="ff-inter fs-xsm fw-medium text-076787 text-center text-uppercase">Platform</h3>
+                <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300"
+                    class="headings text-center mb-3">Through <span class="fw-semibold">Our Platform</span></h2>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
+                    class="fw-normal fs-xsm text-000000 ff-inter opacity-75 text-center mb-5 pb-2">We’ve helped out
+                    partners
+                    and
+                    patients achieve</p>
+                <div class="d-flex gap-4 justify-content-center flex-wrap">
+                    <div data-aos="flip-left" data-aos-duration="1500"
+                        class="cursor_pointer platform_box bg-85B6A6 d-flex me-1 flex-column align-items-center justify-content-center position-relative">
+                        <img class="platform_box_rec_abs" src="assets/images/png/platform_box_rectangle.png" alt="pic">
+                        <h2 class="ff-inter fw-semibold text-ffffff mb-0 fs-3xl">50%</h2>
+                        <p class="ff-inter fs-3xmd fw-normal text-ffffff text-center">Reduction in <span
+                                class="d-block">Pain</span></p>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="400"
+                        class="cursor_pointer platform_box bg-82B2C2 me-1 d-flex flex-column align-items-center justify-content-center position-relative">
+                        <img class="platform_box_rec_abs" src="assets/images/png/platform_box_rectangle.png" alt="pic">
+                        <h2 class="ff-inter fw-semibold text-ffffff mb-0 fs-3xl">90%</h2>
+                        <p class="ff-inter fs-3xmd fw-normal text-ffffff text-center">Increase In-Patient Satisfaction
+                        </p>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="700"
+                        class="cursor_pointer platform_box bg-076787 d-flex flex-column align-items-center justify-content-center position-relative">
+                        <img class="platform_box_rec_abs" src="assets/images/png/platform_box_rectangle.png" alt="pic">
+                        <h2 class="ff-inter fw-semibold text-ffffff mb-0 fs-3xl">60%</h2>
+                        <p class="ff-inter fs-3xmd fw-normal text-ffffff text-center">Faster Recovery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==============Platform End======== -->
+        <!-- ============Your Profits========== -->
+        <section class="py-5 bg-rgba position-relative">
+            <img class="profit_rec_abs d-md-block d-none" src="assets/images/png/profit_rectangle.png" alt="pic">
+            <div class="my_container">
+                <h3 data-aos="fade-down" data-aos-duration="1500"
+                    class="ff-inter fs-xsm fw-medium text-076787 text-center text-uppercase mb-2">Forecast your profits
+                </h3>
+                <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400"
+                    class="headings text-center mb-4 pb-2">Calculate Your <span class="fw-semibold">Reimbursement <span
+                            class="d-md-block"> With Yoomi</span></span></h2>
+                <div class="profit_box">
+                    <div
+                        class="d-flex justify-content-lg-between justify-content-center flex-wrap align-items-center mb-4">
+                        <div data-aos="fade-right" data-aos-duration="1500"
+                            class="patients_box bg-076787 d-flex flex-column align-items-center mb-4 mb-lg-0 me-3 me-lg-0">
+                            <p class="ff-inter fs-xsm fw-semibold text-ffffff mb-3 pt-3 mt-1">Total Patients per month
+                            </p>
+                            <img class="mb-4 pb-2" src="assets/images/svg/slider.svg" alt="slider">
+                            <h3 class="fs-md ff-inter fw-semibold text-076787 text-center value_box mt-1">100</h3>
+                        </div>
+                        <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400"
+                            class="d-fle justify-content-between mb-4 mb-lg-0 width_md_100">
+                            <div
+                                class="calculate_box d-flex align-items-center justify-content-between mb-4 width_md_100">
+                                <h3 class="ff-inter fw-semibold fs-xsm text-000000">Initial Setup</h3>
+                                <button class="ff-inter fs-md fw-semibold text-ffffff value_btn mb-0">$ 40.26</button>
+                            </div>
+                            <div class="calculate_box d-flex align-items-center justify-content-between width_md_100">
+                                <h3 class="ff-inter fw-semibold fs-xsm text-000000">Patient <span class="d-block">
+                                        Monitoring</span>
+                                </h3>
+                                <button class="ff-inter fs-md fw-semibold text-ffffff value_btn mb-0">$ 40.26</button>
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"
+                            class="d-fle justify-content-between width_lg_100 ">
+                            <div
+                                class="calculate_box d-flex align-items-center justify-content-between mb-4 width_lg_100">
+                                <h3 class="ff-inter fw-semibold fs-xsm text-000000">First
+                                    <span class="d-block">20 Minutes</span>
+                                </h3>
+                                <button class="ff-inter fs-md fw-semibold text-ffffff value_btn mb-0">$ 40.26</button>
+                            </div>
+                            <div class="calculate_box d-flex align-items-center justify-content-between width_lg_100">
+                                <h3 class="ff-inter fw-semibold fs-xsm text-000000">Additional
+                                    <span class="d-block">20 Minitutes</span>
+                                </h3>
+                                <button class="ff-inter fs-md fw-semibold text-ffffff value_btn mb-0">$ 40.26</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"
+                        class="w-100 d-flex align-items-center calculate_box justify-content-between">
+                        <h3 class="ff-inter fw-semibold fs-sm text-000000">Potential <span
+                                class="d-md-inline d-block">Reimbursement</span>
+                        </h3>
+                        <button class="ff-inter fs-md fw-semibold text-ffffff value_btn mb-0">$ 40.26</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ============Your Profits End========== -->
+        <!-- ==============Partners================ -->
+        <section class="pt-5">
+            <div class="my_container my-lg-5 py-lg-4">
+                <h3 data-aos="fade-down" data-aos-duration="1500"
+                    class="ff-inter fs-xsm fw-medium text-076787 text-center mb-2">PARTNERS</h3>
+                <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400"
+                    class="headings text-center mb-5 pb-2">Recognized by Leading <span class="fw-semibold">Healthcare
+                        <span class="d-md-block">Institutions</span></span></h2>
+                <div class="partners">
+                    <div class="my-4 d-flex justify-content-center">
+                        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200"
+                            class="partner_box d-flex align-items-center justify-content-center cursor_pointer">
+                            <img src="assets/images/svg/NIh.svg" alt="nih">
+                        </div>
+                    </div>
+                    <div class="my-4 d-flex justify-content-center">
+                        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500"
+                            class="partner_box d-flex align-items-center justify-content-center cursor_pointer">
+                            <img src="assets/images/svg/liberats.svg" alt="liberats">
+                        </div>
+                    </div>
+                    <div class="my-4 d-flex justify-content-center">
+                        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="800"
+                            class="partner_box d-flex align-items-center justify-content-center cursor_pointer">
+                            <img src="assets/images/svg/rwj.svg" alt="rwj">
+                        </div>
+                    </div>
+                    <div class="my-4 d-flex justify-content-center">
+                        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1100"
+                            class="partner_box d-flex align-items-center justify-content-center cursor_pointer">
+                            <img src="assets/images/svg/f&f.svg" alt="f&f">
+                        </div>
+                    </div>
+                    <div class="my-4 d-flex justify-content-center">
+                        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1400"
+                            class="partner_box d-flex align-items-center justify-content-center cursor_pointer">
+                            <img src="assets/images/svg/cornell_univercity.svg" alt="cornell_univercity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==============Partners End================ -->
+        <!-- =============Know More============ -->
+        <section class="pt-lg-5 mt-lg-5">
+            <div class="my_container">
+                <h3 data-aos="fade-down" data-aos-duration="1500"
+                    class="ff-inter fs-xsm fw-medium text-076787 text-center text-uppercase mb-3">Know More</h3>
+                <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300"
+                    class="headings text-center mb-5 pb-3">And Used by the Biggest <span class="fw-semibold">Figures
+                        <span class="d-lg-block"> in Sports and Rehab</span></span></h2>
+                <div data-aos="zoom-in" data-aos-duration="1500" class="tab-content d-flex justify-content-center"
+                    id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0"> <img class="width_lg_100"
+                            src="assets/images/png/know_more_big_img1.png" alt="hospital_room"> </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0"><img class="width_lg_100" src="assets/images/png/know_more_big_img2.png"
+                            alt="about_sports" /></div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0"><img class="width_lg_100" src="assets/images/png/know_more_big_img3.png"
+                            alt="hospital_room"></div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                        tabindex="0"><img class="width_lg_100" src="assets/images/png/know_more_big_img1.png"
+                            alt="hospital_room"></div>
+                </div>
+                <ul class="nav nav-pills mt-5 pt-2 d-flex align-items-center gap-4 justify-content-center overflow-x-scroll"
+                    id="pills-tab" role="tablist">
+                    <li data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" class="nav-item"
+                        role="presentation">
+                        <img class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true" src="assets/images/png/know_more_small_img1.png" alt="hospital_room" />
+                    </li>
+                    <li data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500" class="nav-item"
+                        role="presentation">
+                        <img class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false" src="assets/images/png/know_more_small_img2.png" alt="about_sports" />
+                    </li>
+                    <li data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700" class="nav-item"
+                        role="presentation">
+                        <img class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false" src="assets/images/png/know_more_small_img3.png"
+                            alt="hospital_room" />
+                    </li>
+                    <li data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900" class="nav-item"
+                        role="presentation">
+                        <img class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                            aria-selected="false" src="assets/images/png/know_more_small_img1.png"
+                            alt="hospital_room" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- =============Know More End============ -->
+        <!-- =============Industry Standard======== -->
+        <section class="py-5 mt-lg-5">
+            <div class="my_container my-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 data-aos="fade-right" data-aos-duration="1500"
+                            class="ff-inter fs-xsm fw-medium text-076787 mb-2 text-uppercase">The Best for you</h4>
+                        <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300" class="headings mb-3">
+                            Committed to Industry-Standard <span class="fw-semibold">Compliance
+                                and
+                                Safety</span></h2>
+                        <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600"
+                            class="ff-inter fs-xsm fw-normal text-000000 opacity-75">Yoomi has signed the American
+                            Physical
+                            Therapy
+                            Association Digital Transparency pledge, illustrating our commitment to the fact that
+                            digital
+                            "physical therapy" services are only performed or directed by licensed physical therapists
+                            in
+                            accordance with all regulations and APTA’s Standards of Practice for Physical Therapy.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center flex-sm-row flex-column justify-content-center">
+                        <div class="me-sm-4 pe-sm-3">
+                            <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200"
+                                class="industry_logo d-flex justify-content-center align-items-center mb-4 pb-2">
+                                <img src="assets/images/svg/hipaa.svg" alt="hipaa">
+                            </div>
+                            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"
+                                class="industry_logo d-flex justify-content-center align-items-center mb-4 mb-sm-0 pb-2 pb-sm-0">
+                                <img src="assets/images/svg/fda.svg" alt="fda">
+                            </div>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700"
+                            class="industry_logo d-flex justify-content-center align-items-center">
+                            <img src="assets/images/svg/apta.svg" alt="apta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- =============Industry Standard End======== -->
+        <!-- ============Clint Page=========== -->
+        <section class="py-5 position-relative">
+            <img class="client_rec_abs d-md-block d-none" src="assets/images/png/client_rectangle.png" alt="pic">
+            <img class="client_rec_abs2 d-md-block d-none" src="assets/images/png/client_right_rectanglr.png" alt="pic">
+            <div class="my_container mb-400">
+                <h3 data-aos="fade-down" data-aos-duration="1500"
+                    class="fs-xsm fw-semibold ff-inter text-076787 text-center text-uppercase mb-2">CLIENT review</h3>
+                <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400"
+                    class="headings text-center mb-5 pb-1">What are Client Think <span class="fw-semibold"> About Us
+                    </span>
+                </h2>
+                <div class="our_clients">
+                    <div class="d-flex justify-content-center my-5">
+                        <div class="client_box py-5">
+                            <div class="d-flex justify-content-center mb-2 mt-4 pt-1">
+                                <img data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"
+                                    src="assets/images/svg/joy_robert.svg" alt="joy_robert">
+                            </div>
+                            <h2 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300"
+                                class="text-000000 ff-inter fw-medium fs-3xmd text-center mb-2">Joy Robert <span
+                                    class="fs-2xsm">(
+                                    USA
+                                    )</span></h2>
+                            <h4 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500"
+                                class="ff-inter fs-2xsm fw-medium text-82B2C2 text-center mb-2">CEO ( yoomi )</h4>
+                            <p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700"
+                                class="ff-inter fs-xsm fw-normal text-000000 opacity-75 text-center mb-3">I'm a
+                                paragraph.
+                                Click
+                                here
+                                to add your own text and edit me. It’s <span class="d-lg-block">
+                                    easy. Just click “Edit Text” or double click me to add your own</span> content and
+                                make
+                                changes to the font.</p>
+                            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900"
+                                class="d-flex justify-content-center mb-3">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center my-5">
+                        <div class="client_box py-5">
+                            <div class="d-flex justify-content-center mb-2 mt-4 pt-1">
+                                <img data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"
+                                    src="assets/images/svg/joy_robert.svg" alt="joy_robert">
+                            </div>
+                            <h2 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300"
+                                class="text-000000 ff-inter fw-medium fs-3xmd text-center mb-2">Joy Robert <span
+                                    class="fs-2xsm">(
+                                    USA
+                                    )</span></h2>
+                            <h4 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500"
+                                class="ff-inter fs-2xsm fw-medium text-82B2C2 text-center mb-2">CEO ( yoomi )</h4>
+                            <p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="700"
+                                class="ff-inter fs-xsm fw-normal text-000000 opacity-75 text-center mb-3">I'm a
+                                paragraph.
+                                Click
+                                here
+                                to add your own text and edit me. It’s <span class="d-lg-block">
+                                    easy. Just click “Edit Text” or double click me to add your own</span> content and
+                                make
+                                changes to the font.</p>
+                            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="900"
+                                class="d-flex justify-content-center mb-3">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                                <img src="assets/images/svg/rating_star.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-3">
+                    <div data-aos="fade-right" data-aos-duration="1500"
+                        class="arrow_circle d-flex justify-content-center align-items-center pre">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.44789 1.03831L1.0625 5.42369L5.44789 9.80908" stroke="black"
+                                stroke-width="1.75416" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100"
+                        class="arrow_circle d-flex justify-content-center align-items-center next">
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.55016 1.03831L5.93555 5.42369L1.55016 9.80908" stroke="black"
+                                stroke-width="1.75416" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="my_container bg-076787 rounded-5 signup_abs w-100 z-2">
+                <div class="signup_container pt-4 pb-1 position-relative">
+                    <img class="sign_rec_abs d-md-block d-none" src="assets/images/png/sign_up_rectangle.png" alt="pic">
+                    <div class="row align-items-center pt-3 pb-3">
+                        <div
+                            class="col-lg-6 mb-4 mb-lg-0 d-flex flex-column justify-content-center align-items-lg-start align-items-center">
+                            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100"><img
+                                    class="cursor_pointer" src="assets/images/svg/sign_up_logo.svg" alt="logo"></div>
+                            <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300"
+                                class="fs-lg ff_Plus_Jakarta_Sans fw-normal text-ffffff mt-4 pt-1 mb-5">Sign Up to Join
+                                <span class="fw-semibold"> Our Newsletter</span>
+                            </h3>
+                            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500"
+                                class="input_box d-flex align-items-center width_sm_100 justify-content-between">
+                                <div><input class="ps-2 ff-inter fs-xsm fw-medium text-000000 input_box2" type="email"
+                                        placeholder="Enter Your Email" /></div>
+                                <div><button
+                                        class="buttons ff-inter fw-semibold fs-xsm text-ffffff d-inline-block m-1">Get
+                                        Started</button></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center">
+                            <img data-aos="zoom-in" data-aos-duration="1500" src="assets/images/png/sign_up_boy.png"
+                                alt="boy">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ============Clint Page End=========== -->
+        <!-- ================Footer Start=============== -->
+        <footer class="bg-black pt-5 position-relative" id="About">
+            <img class="footer_rec_abs" src="assets/images/png/footer_rectangle.png" alt="pic">
+            <div class="my_container py-sm-5 mt-sm-5">
+                <div class="row pt-sm-5 mt-sm-4">
+                    <div class="col-md-6 mb-md-0 mb-5">
+                        <a href="#"><img class="mb-4 pb-1" src="assets/images/svg/footer_logo.svg" alt="logo"></a>
+                        <p class="ff-inter fs-2xsm fw-light text-ffffff">I'm a paragraph. Click here to add your <span
+                                class="d-md-block"> own text and edit me. It’s easy. Just click </span>“Edit Text” </p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end">
+                        <div class="d-flex gap-5 flex-wrap">
+                            <div>
+                                <h2 class="ff-inter fs-2xsm fw-semibold text-ffffff mb-3">About Us</h2>
+                                <ul class="p-0">
+                                    <li class="mb-3"><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline"
+                                            href="#">Meet the
+                                            Team</a>
+                                    </li>
+                                    <li class="mb-3"><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline"
+                                            href="#">Our
+                                            Mission</a></li>
+                                    <li><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline" href="#">Our
+                                            Vission</a></li>
+                                </ul>
+                            </div>
+                            <div class="ms-lg-4">
+                                <h2 class="ff-inter fs-2xsm fw-semibold text-ffffff mb-3">Contact Us</h2>
+                                <ul class="p-0">
+                                    <li class="mb-3"><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline"
+                                            href="#">Twitter</a>
+                                    </li>
+                                    <li class="mb-3"><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline"
+                                            href="#">Instagram</a></li>
+                                    <li><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline"
+                                            href="#">Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="ms-lg-4">
+                                <h2 class="ff-inter fs-2xsm fw-semibold text-ffffff mb-3">News</h2>
+                                <ul class="p-0">
+                                    <li><a class="ff-inter fs-2xsm fw-normal text-ffffff footer_underline"
+                                            href="#">Recent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-1">
+                        <p class="ff-inter fs-xsm fw-light text-ffffff mb-3 cursor_pointer"><span class="me-3"><img
+                                    src="assets/images/svg/gmail_icon.svg" alt="gmail"></span>contact@yoomi.com</p>
+                        <p class="ff-inter fs-xsm fw-light text-ffffff mb-0 cursor_pointer"><span class="me-3"><img
+                                    src="assets/images/svg/phone_icon.svg" alt="gmail"></span>+123 456 789</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-ffffff opacity-25 mb-0">
+            <div class="my_container">
+                <div class="d-flex gap-4 justify-content-end py-4">
+                    <p class="ff-inter fw-normal fs-2xsm text-ffffff mb-0">Terms of Service</p>
+                    <p class="ff-inter fw-normal fs-2xsm text-ffffff mb-0">Privacy Policy</p>
+                    <p class="ff-inter fw-normal fs-2xsm text-ffffff mb-0">Cookies</p>
+                </div>
+            </div>
+        </footer>
+        <!-- ================Footer End============ -->
+    </div>
+    <!-- ==============Bootstrap=============p -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- =====jquery link==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- =======slick js link======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!-- ==========AOS======== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ========index.js=========== -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
